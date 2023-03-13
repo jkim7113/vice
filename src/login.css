@@ -1,0 +1,130 @@
+#modal-login-bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+#modal-login{
+    width: 460px;
+    height: auto;
+    background-color: white;
+    /* border: 2px #f890e7 solid; */
+    border-radius: 2px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#modal-login-header{
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    margin-top: 26px;
+    margin-bottom: 16px;
+}
+
+#modal-login-header > h3{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#modal-login-body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 86%;
+}
+
+#modal-login-body > label{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    margin-top: 16px;
+}
+
+#modal-login-body > input{
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    background-color: #D9D9D999;
+    border: none;
+    border-radius: 2px;
+}
+
+#modal-login-body > input:focus{
+    outline: none;
+}
+
+#modal-login-body-footer{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#modal-login-body-checkbox-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#modal-login-checkbox{
+    margin-left: 0;
+    width: 16px;
+    height: 16px;
+}
+
+#modal-login-checkbox-label{
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 6px;
+    margin-top: 1px;
+}
+
+#modal-login-forgotpw{
+    font-size: 14px;
+    color: black;
+}
+
+#modal-login-btn{
+    margin-top: 16px;
+    margin-bottom: 26px;
+    width: 100%;
+    height: 40px;
+    background-color: #f890e7;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#modal-login-signup-btn{
+    margin-top: 16px;
+    margin-bottom: 36px;
+    text-decoration: none;
+    text-align: right;
+    color: black;
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px){
+    #modal-login{
+        width: 90%;
+    }
+    #modal-login-btn{
+        height: 50px;
+    }
+}

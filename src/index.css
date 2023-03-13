@@ -1,0 +1,112 @@
+@font-face{
+  font-family: 'BroadwayD';
+  src: url('/public/fonts/BroadwayD.ttf');
+}
+
+@font-face{
+  font-family: 'Lato Light';
+  src: url('/public/fonts/Lato-Light.ttf');
+}
+
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin-top: 90px;
+}
+
+.App{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 130px;
+}
+
+footer{
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  padding-top: 30px;
+  border-top: #D9D9D999 solid 1.5px;
+}
+
+#footer-container{
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#footer-container > span{
+  height: auto;
+  width: 33%;
+}
+
+.footer-links{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-links:hover{
+  border-bottom: #f890e7 solid 3px;
+}
+
+#footer-content-left{
+  text-align: left;
+}
+
+#footer-content-center{
+  text-align: center;
+}
+
+#footer-content-center > p{
+  margin: 0;
+}
+
+#footer-content-right{
+  text-align: right;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato-Light", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media (max-width: 1000px){
+  .App{
+    padding-bottom: 200px;
+  }
+  footer{
+    height: 120px;
+    padding-bottom: 20px;
+  }
+  #footer-container > span{
+    text-align: left;
+    width: 100%;
+  }
+  #footer-content-center > p{
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px){
+  html, body{
+    margin-top: 30px;
+  }
+}
